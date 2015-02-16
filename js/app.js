@@ -8,11 +8,21 @@ var Location = {
 
   getEntry: function () {
     $('#searchBtn').click(function(){
-      var entry = $("#textbox").val();
-      $('#allResults').empty();
+      Location.validate();
+    });
+  },
+
+  validate: function() {
+    var entry = $("#textbox").val();
+    $('#allResults').empty();
+    if(entry != "") {
       Location.getLatLong(entry);
       $('#loader').show();
-    });
+    }
+    else {
+      $('#warning').html("Search box cannot be empty!");
+      $('#warning').show();
+    }
   },
 
   getLatLong: function (param) {
