@@ -16,6 +16,7 @@ var Location = {
     var entry = $("#textbox").val();
     $('#allResults').empty();
     if(entry != "") {
+      $('#warning').hide();
       Location.getLatLong(entry);
       $('#loader').show();
     }
