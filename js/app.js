@@ -19,6 +19,7 @@ var Location = {
       $('#warning').hide();
       Location.getLatLong(entry);
       $('#loader').show();
+      $('#loader').hide();
     }
     else {
       $('#warning').html("Search box cannot be empty!");
