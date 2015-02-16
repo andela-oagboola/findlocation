@@ -1,0 +1,72 @@
+body {
+  background-color: grey;
+}
+
+#userQuery {
+  margin: auto;
+  position: absolute;
+  left: 550px;
+  top: 100px;
+}
+
+#allResults {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 850px;
+  margin: auto;
+  top: 200px;
+}
+
+#loader {
+  width:100px;
+  height:20px;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  left: 600px;
+  top: 170px;
+  padding-top: 5px;
+  padding-left: 5px;
+  display: none;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: Arial;
+  color: white;
+  font-size: 20px
+}
+
+h2{
+  color: red;
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+}
+
+img{
+  border-radius: 10px;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 20px;  
+}
+
+#eachResult{
+  margin: auto;
+  height: 250;
+  padding: 10px;
+}
+
+#articleBody{
+  position: relative;  
+  font-family: Arial;
+  text-align: justify;
+  top: 10px;
+  width: 520px;
+  left: 270px;
+  clear: both;
+}
